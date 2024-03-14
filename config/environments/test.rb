@@ -28,7 +28,7 @@ Rails.application.configure do
   config.cache_store = :null_store
 
   # Raise exceptions instead of rendering exception templates.
-  config.action_dispatch.show_exceptions = false
+  config.action_dispatch.show_exceptions = true #Rails catches exceptions and renders the corresponding error page (like 404 or 500 error pages). This is typically used in production environments to provide a more user-friendly error response. In test environments, it's better to raise exceptions so that you can see the full error message and backtrace.
 
   # Disable request forgery protection in test environment.
   config.action_controller.allow_forgery_protection = false
