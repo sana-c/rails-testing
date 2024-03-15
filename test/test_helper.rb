@@ -1,9 +1,7 @@
 ENV["RAILS_ENV"] ||= "test"
 require_relative "../config/environment" #loads the Rails application
 require "rails/test_help" #library that provides a lot of testing functionality
-require 'webdrivers'
 
-Webdrivers::Chromedriver.required_version = '122.0.6261.128'
 
 class ActiveSupport::TestCase # class that all test classes inherit from
   # Run tests in parallel with specified workers
